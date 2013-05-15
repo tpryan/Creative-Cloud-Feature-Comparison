@@ -1,0 +1,184 @@
+.app, .service {
+  display: inline-block;
+  width: 15%;
+  min-width: 30px; }
+
+a {
+  text-decoration: none; }
+
+a[data-tip]:after {
+  content: attr(data-tip);
+  position: absolute;
+  z-index: 1000;
+  visibility: hidden;
+  background: #FFF;
+  border: 1px solid #cccccc;
+  padding: 2px 5px;
+  box-shadow: 2px 2px 3px #cccccc;
+  margin-left: -5%; }
+
+a[data-tip]:hover:before, a[data-tip]:hover:after {
+  visibility: visible;
+  -webkit-transition: visibility 0s linear 0.3s;
+  -moz-transition: visibility 0s linear 0.3s;
+  -o-transition: visibility 0s linear 0.3s;
+  transition: visibility 0s linear 0.3s; }
+
+.trial {
+  -webkit-filter: saturate(0); }
+
+td {
+  vertical-align: top;
+  padding: 0 2%;
+  width: 25%; }
+
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0; }
+
+  3.12% {
+    opacity: 1; }
+
+  6.5% {
+    opacity: 1; }
+
+  9.72% {
+    opacity: 0; }
+
+  100% {
+    opacity: 0; } }
+
+.single-rotator {
+  max-width: 300px;
+  min-height: 300px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0 auto; }
+
+.single {
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block; }
+
+.acrobat {
+  -webkit-animation-name: appear;
+  -webkit-animation-duration: 85s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s; }
+
+.after-effects {
+  -webkit-animation-name: appear;
+  -webkit-animation-duration: 85s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 5s; }
+
+.audition {
+  -webkit-animation-name: appear;
+  -webkit-animation-duration: 85s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 10s; }
+
+.bridge {
+  -webkit-animation-name: appear;
+  -webkit-animation-duration: 85s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 15s; }
+
+.dreamweaver {
+  -webkit-animation-name: appear;
+  -webkit-animation-duration: 85s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 20s; }
+
+.fireworks {
+  -webkit-animation-name: appear;
+  -webkit-animation-duration: 85s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 25s; }
+
+.flash {
+  -webkit-animation-name: appear;
+  -webkit-animation-duration: 85s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 30s; }
+
+.illustrator {
+  -webkit-animation-name: appear;
+  -webkit-animation-duration: 85s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 35s; }
+
+.incopy {
+  -webkit-animation-name: appear;
+  -webkit-animation-duration: 85s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 40s; }
+
+.indesign {
+  -webkit-animation-name: appear;
+  -webkit-animation-duration: 85s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 45s; }
+
+.lightroom {
+  -webkit-animation-name: appear;
+  -webkit-animation-duration: 85s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 50s; }
+
+.muse {
+  -webkit-animation-name: appear;
+  -webkit-animation-duration: 85s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 55s; }
+
+.photoshop {
+  -webkit-animation-name: appear;
+  -webkit-animation-duration: 85s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 60s; }
+
+.prelude {
+  -webkit-animation-name: appear;
+  -webkit-animation-duration: 85s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 65s; }
+
+.premiere {
+  -webkit-animation-name: appear;
+  -webkit-animation-duration: 85s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 70s; }
+
+.speedgrade {
+  -webkit-animation-name: appear;
+  -webkit-animation-duration: 85s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 75s; }
+
+.story {
+  -webkit-animation-name: appear;
+  -webkit-animation-duration: 85s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 80s; }
