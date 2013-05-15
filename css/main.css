@@ -1,6 +1,6 @@
 .app, .service {
   display: inline-block;
-  width: 15%;
+  width: 20%;
   min-width: 30px; }
 
 a {
@@ -64,121 +64,86 @@ td {
   left: 0;
   display: block; }
 
-.acrobat {
+.single-rotator .acrobat {
   -webkit-animation-name: appear;
-  -webkit-animation-duration: 85s;
+  -webkit-animation-duration: 60s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-delay: 0s; }
 
-.after-effects {
+.single-rotator .after-effects {
   -webkit-animation-name: appear;
-  -webkit-animation-duration: 85s;
+  -webkit-animation-duration: 60s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-delay: 5s; }
 
-.audition {
+.single-rotator .audition {
   -webkit-animation-name: appear;
-  -webkit-animation-duration: 85s;
+  -webkit-animation-duration: 60s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-delay: 10s; }
 
-.bridge {
+.single-rotator .dreamweaver {
   -webkit-animation-name: appear;
-  -webkit-animation-duration: 85s;
+  -webkit-animation-duration: 60s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-delay: 15s; }
 
-.dreamweaver {
+.single-rotator .flash {
   -webkit-animation-name: appear;
-  -webkit-animation-duration: 85s;
+  -webkit-animation-duration: 60s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-delay: 20s; }
 
-.fireworks {
+.single-rotator .illustrator {
   -webkit-animation-name: appear;
-  -webkit-animation-duration: 85s;
+  -webkit-animation-duration: 60s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-delay: 25s; }
 
-.flash {
+.single-rotator .indesign {
   -webkit-animation-name: appear;
-  -webkit-animation-duration: 85s;
+  -webkit-animation-duration: 60s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-delay: 30s; }
 
-.illustrator {
+.single-rotator .inspect {
   -webkit-animation-name: appear;
-  -webkit-animation-duration: 85s;
+  -webkit-animation-duration: 60s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-delay: 35s; }
 
-.incopy {
+.single-rotator .muse {
   -webkit-animation-name: appear;
-  -webkit-animation-duration: 85s;
+  -webkit-animation-duration: 60s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-delay: 40s; }
 
-.indesign {
+.single-rotator .photoshop {
   -webkit-animation-name: appear;
-  -webkit-animation-duration: 85s;
+  -webkit-animation-duration: 60s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-delay: 45s; }
 
-.lightroom {
+.single-rotator .premiere {
   -webkit-animation-name: appear;
-  -webkit-animation-duration: 85s;
+  -webkit-animation-duration: 60s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-delay: 50s; }
 
-.muse {
+.single-rotator .speedgrade {
   -webkit-animation-name: appear;
-  -webkit-animation-duration: 85s;
+  -webkit-animation-duration: 60s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-delay: 55s; }
-
-.photoshop {
-  -webkit-animation-name: appear;
-  -webkit-animation-duration: 85s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 60s; }
-
-.prelude {
-  -webkit-animation-name: appear;
-  -webkit-animation-duration: 85s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 65s; }
-
-.premiere {
-  -webkit-animation-name: appear;
-  -webkit-animation-duration: 85s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 70s; }
-
-.speedgrade {
-  -webkit-animation-name: appear;
-  -webkit-animation-duration: 85s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 75s; }
-
-.story {
-  -webkit-animation-name: appear;
-  -webkit-animation-duration: 85s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 80s; }

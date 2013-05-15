@@ -2,7 +2,7 @@
 
 .app, .service{
 	display: inline-block;
-	width: 15%;
+	width: 20%;
 	min-width: 30px;
 
 
@@ -92,59 +92,21 @@ td{
   -webkit-animation-delay: $delay;
 }
 
+$items: 12;
 $interval: 5;
-$duration: $interval * 16 + $interval;
+$duration: ($interval * $items);
 
 
-.acrobat {
-	@include rotator($duration + s, ($interval * 0) + s);	
-}
-.after-effects {
-  	@include rotator($duration + s, ($interval * 1) + s);	
-}
-.audition {
-  	@include rotator($duration + s, ($interval * 2) + s);	
-}
-.bridge {
-  	@include rotator($duration + s, ($interval * 3) + s);	
-}
-.dreamweaver {
-  	@include rotator($duration + s, ($interval * 4) + s);	
-}
-.fireworks {
-  	@include rotator($duration + s, ($interval * 5) + s);	
-}
-.flash {
-  	@include rotator($duration + s, ($interval * 6) + s);	
-}
-.illustrator {
-  	@include rotator($duration + s, ($interval * 7) + s);	
-}
-.incopy {
-  	@include rotator($duration + s, ($interval * 8) + s);	
-}
-.indesign {
-  	@include rotator($duration + s, ($interval * 9) + s);	
-}
-.lightroom {
-  	@include rotator($duration + s, ($interval * 10) + s);	
-}
-.muse {
-  	@include rotator($duration + s, ($interval * 11) + s);	
-}
-.photoshop {
-  	@include rotator($duration + s, ($interval * 12) + s);	
-}
-.prelude {
-  	@include rotator($duration + s, ($interval * 13) + s);	
-}
-.premiere {
-  	@include rotator($duration + s, ($interval * 14) + s);	
-}
-.speedgrade {
-  	@include rotator($duration + s, ($interval * 15) + s);	
-}
-.story {
-  	@include rotator($duration + s, ($interval * 16) + s);	
-}
+.single-rotator .acrobat  { @include rotator($duration + s, ($interval * 0) + s);	}
+.single-rotator .after-effects { @include rotator($duration + s, ($interval * 1) + s);	}
+.single-rotator .audition { @include rotator($duration + s, ($interval * 2) + s);	}
+.single-rotator .dreamweaver { @include rotator($duration + s, ($interval * 3) + s);	}
+.single-rotator .flash { @include rotator($duration + s, ($interval * 4) + s);	}
+.single-rotator .illustrator { @include rotator($duration + s, ($interval * 5) + s);	}
+.single-rotator .indesign { @include rotator($duration + s, ($interval * 6) + s);	}
+.single-rotator .inspect { @include rotator($duration + s, ($interval * 7) + s); }
+.single-rotator .muse { @include rotator($duration + s, ($interval * 8) + s);	}
+.single-rotator .photoshop { @include rotator($duration + s, ($interval * 9) + s);	}
+.single-rotator .premiere { @include rotator($duration + s, ($interval * 10) + s);	}
+.single-rotator .speedgrade { @include rotator($duration + s, ($interval * 11) + s);	}
 
