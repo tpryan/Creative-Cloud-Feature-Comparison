@@ -1,15 +1,63 @@
+$base-font: source-sans-pro, sans-serif;
 
 
-.app, .service{
-	display: inline-block;
-	width: 20%;
-	min-width: 30px;
-
-
-
-		
-
+body{
+  font-family: $base-font;
+  background-color: #e7e7e7;
+  margin: 0;
 }
+
+header{
+  background-color: #212121;
+  padding: 10px;
+  h1{
+    color: #FFFFFF;
+    font-weight: 600;
+    margin: 0;
+  }
+}
+
+table{
+  margin: 10px auto;
+  background-color: #999;
+  border-collapse:separate;
+  border-spacing:1px 1px;
+  width: 96%;
+}
+
+thead{
+  th{
+    background-color: #ccc;
+    font-size: .8rem;
+  }
+}
+
+tbody{
+  th{
+    text-align: right;
+    vertical-align: top;
+    background-color: #ccc;
+    width: 5%;
+    font-size: .8rem;
+  }
+  td{
+    vertical-align: top;
+    padding: 1% 2% 1% 2%;
+    width: 16%;
+    background-color: #e7e7e7;
+
+  }
+}
+
+ul{
+  padding-left: 0;
+  list-style: none;
+  li{
+    margin-bottom: 20px;
+  }
+}
+
+
 
 a{
 	text-decoration: none;
@@ -37,16 +85,22 @@ a[data-tip]:hover:before, a[data-tip]:hover:after {
 }
 
 
+.app, .service{
+  display: inline-block;
+  width: 15%;
+  min-width: 20px;
+  -webkit-filter: drop-shadow(2px 2px 3px #666);
+
+}
 
 .trial{
-	-webkit-filter: saturate(0);
+	-webkit-filter: saturate(20%);
 }
 
-td{
-	vertical-align: top;
-	padding: 0 2%;
-	width: 25%
+.content{
+  margin: 10px;
 }
+
 
 @-webkit-keyframes appear {
   0% {
@@ -67,8 +121,8 @@ td{
 }
 
 .single-rotator{
-	max-width: 300px;
-	min-height: 300px;
+	// max-width: 300px;
+	// min-height: 300px;
 	width: 100%;
 	height: 100%;
 	position: relative;
@@ -82,6 +136,18 @@ td{
 	top: 0;
 	left: 0;
 	display: block;
+}
+
+.number{
+  font-size: 1.5rem;
+}
+
+.price{
+    @extend .number;
+}
+
+.storage{
+    @extend .number;
 }
 
 @mixin rotator($duration,$delay) {
