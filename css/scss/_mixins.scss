@@ -1,0 +1,103 @@
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  3.12% {
+    opacity: 1;
+  }
+  6.5% {
+    opacity: 1;
+  }
+  9.72%{
+  	opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  3.12% {
+    opacity: 1;
+  }
+  6.5% {
+    opacity: 1;
+  }
+  9.72%{
+  	opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  3.12% {
+    opacity: 1;
+  }
+  6.5% {
+    opacity: 1;
+  }
+  9.72%{
+  	opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  3.12% {
+    opacity: 1;
+  }
+  6.5% {
+    opacity: 1;
+  }
+  9.72%{
+  	opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+
+@mixin rotator($duration,$delay) {
+  -webkit-animation-name: appear;
+  -webkit-animation-duration: $duration;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-delay: $delay;
+
+  -moz-animation-name: appear;
+  -moz-animation-duration: $duration;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-delay: $delay;
+
+  -o-animation-name: appear;
+  -o-animation-duration: $duration;
+  -o-animation-iteration-count: infinite;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-delay: $delay;
+
+  animation-name: appear;
+  animation-duration: $duration;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: $delay;
+}
+
+
+
+

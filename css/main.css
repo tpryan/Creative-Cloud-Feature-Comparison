@@ -1,3 +1,67 @@
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0; }
+
+  3.12% {
+    opacity: 1; }
+
+  6.5% {
+    opacity: 1; }
+
+  9.72% {
+    opacity: 0; }
+
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes appear {
+  0% {
+    opacity: 0; }
+
+  3.12% {
+    opacity: 1; }
+
+  6.5% {
+    opacity: 1; }
+
+  9.72% {
+    opacity: 0; }
+
+  100% {
+    opacity: 0; } }
+
+@-o-keyframes appear {
+  0% {
+    opacity: 0; }
+
+  3.12% {
+    opacity: 1; }
+
+  6.5% {
+    opacity: 1; }
+
+  9.72% {
+    opacity: 0; }
+
+  100% {
+    opacity: 0; } }
+
+@keyframes appear {
+  0% {
+    opacity: 0; }
+
+  3.12% {
+    opacity: 1; }
+
+  6.5% {
+    opacity: 1; }
+
+  9.72% {
+    opacity: 0; }
+
+  100% {
+    opacity: 0; } }
+
 body {
   font-family: source-sans-pro, sans-serif;
   background-color: #e7e7e7;
@@ -32,7 +96,8 @@ tbody td {
   vertical-align: top;
   padding: 1% 2% 1% 2%;
   width: 16%;
-  background-color: #e7e7e7; }
+  background-color: #e7e7e7;
+  position: relative; }
 
 ul {
   padding-left: 0;
@@ -46,6 +111,8 @@ a {
 a[data-tip]:after {
   content: attr(data-tip);
   position: absolute;
+  left: 20px;
+  right: 10px;
   z-index: 1000;
   visibility: hidden;
   background: #FFF;
@@ -63,31 +130,18 @@ a[data-tip]:hover:before, a[data-tip]:hover:after {
 
 .app, .service {
   display: inline-block;
-  width: 15%;
+  width: 19%;
   min-width: 20px;
   -webkit-filter: drop-shadow(2px 2px 3px #666666); }
+
+.edge, .other {
+  width: 13%; }
 
 .trial {
   -webkit-filter: saturate(20%); }
 
 .content {
   margin: 10px; }
-
-@-webkit-keyframes appear {
-  0% {
-    opacity: 0; }
-
-  3.12% {
-    opacity: 1; }
-
-  6.5% {
-    opacity: 1; }
-
-  9.72% {
-    opacity: 0; }
-
-  100% {
-    opacity: 0; } }
 
 .single-rotator {
   width: 100%;
@@ -111,81 +165,268 @@ a[data-tip]:hover:before, a[data-tip]:hover:after {
   -webkit-animation-duration: 60s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 0s; }
+  -webkit-animation-delay: 0s;
+  -moz-animation-name: appear;
+  -moz-animation-duration: 60s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-delay: 0s;
+  -o-animation-name: appear;
+  -o-animation-duration: 60s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-delay: 0s;
+  animation-name: appear;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s; }
 
 .single-rotator .after-effects {
   -webkit-animation-name: appear;
   -webkit-animation-duration: 60s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 5s; }
+  -webkit-animation-delay: 5s;
+  -moz-animation-name: appear;
+  -moz-animation-duration: 60s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-delay: 5s;
+  -o-animation-name: appear;
+  -o-animation-duration: 60s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-delay: 5s;
+  animation-name: appear;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 5s; }
 
 .single-rotator .audition {
   -webkit-animation-name: appear;
   -webkit-animation-duration: 60s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 10s; }
+  -webkit-animation-delay: 10s;
+  -moz-animation-name: appear;
+  -moz-animation-duration: 60s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-delay: 10s;
+  -o-animation-name: appear;
+  -o-animation-duration: 60s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-delay: 10s;
+  animation-name: appear;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 10s; }
 
 .single-rotator .dreamweaver {
   -webkit-animation-name: appear;
   -webkit-animation-duration: 60s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 15s; }
+  -webkit-animation-delay: 15s;
+  -moz-animation-name: appear;
+  -moz-animation-duration: 60s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-delay: 15s;
+  -o-animation-name: appear;
+  -o-animation-duration: 60s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-delay: 15s;
+  animation-name: appear;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 15s; }
 
 .single-rotator .flash {
   -webkit-animation-name: appear;
   -webkit-animation-duration: 60s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 20s; }
+  -webkit-animation-delay: 20s;
+  -moz-animation-name: appear;
+  -moz-animation-duration: 60s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-delay: 20s;
+  -o-animation-name: appear;
+  -o-animation-duration: 60s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-delay: 20s;
+  animation-name: appear;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 20s; }
 
 .single-rotator .illustrator {
   -webkit-animation-name: appear;
   -webkit-animation-duration: 60s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 25s; }
+  -webkit-animation-delay: 25s;
+  -moz-animation-name: appear;
+  -moz-animation-duration: 60s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-delay: 25s;
+  -o-animation-name: appear;
+  -o-animation-duration: 60s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-delay: 25s;
+  animation-name: appear;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 25s; }
 
 .single-rotator .indesign {
   -webkit-animation-name: appear;
   -webkit-animation-duration: 60s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 30s; }
+  -webkit-animation-delay: 30s;
+  -moz-animation-name: appear;
+  -moz-animation-duration: 60s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-delay: 30s;
+  -o-animation-name: appear;
+  -o-animation-duration: 60s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-delay: 30s;
+  animation-name: appear;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 30s; }
 
 .single-rotator .inspect {
   -webkit-animation-name: appear;
   -webkit-animation-duration: 60s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 35s; }
+  -webkit-animation-delay: 35s;
+  -moz-animation-name: appear;
+  -moz-animation-duration: 60s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-delay: 35s;
+  -o-animation-name: appear;
+  -o-animation-duration: 60s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-delay: 35s;
+  animation-name: appear;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 35s; }
 
 .single-rotator .muse {
   -webkit-animation-name: appear;
   -webkit-animation-duration: 60s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 40s; }
+  -webkit-animation-delay: 40s;
+  -moz-animation-name: appear;
+  -moz-animation-duration: 60s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-delay: 40s;
+  -o-animation-name: appear;
+  -o-animation-duration: 60s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-delay: 40s;
+  animation-name: appear;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 40s; }
 
 .single-rotator .photoshop {
   -webkit-animation-name: appear;
   -webkit-animation-duration: 60s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 45s; }
+  -webkit-animation-delay: 45s;
+  -moz-animation-name: appear;
+  -moz-animation-duration: 60s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-delay: 45s;
+  -o-animation-name: appear;
+  -o-animation-duration: 60s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-delay: 45s;
+  animation-name: appear;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 45s; }
 
 .single-rotator .premiere {
   -webkit-animation-name: appear;
   -webkit-animation-duration: 60s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 50s; }
+  -webkit-animation-delay: 50s;
+  -moz-animation-name: appear;
+  -moz-animation-duration: 60s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-delay: 50s;
+  -o-animation-name: appear;
+  -o-animation-duration: 60s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-delay: 50s;
+  animation-name: appear;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 50s; }
 
 .single-rotator .speedgrade {
   -webkit-animation-name: appear;
   -webkit-animation-duration: 60s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 55s; }
+  -webkit-animation-delay: 55s;
+  -moz-animation-name: appear;
+  -moz-animation-duration: 60s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-delay: 55s;
+  -o-animation-name: appear;
+  -o-animation-duration: 60s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-delay: 55s;
+  animation-name: appear;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 55s; }
+
+.single-rotator .noanimate {
+  -webkit-animation: none;
+  -moz-animation: none;
+  -o-animation: none;
+  -ms-animation: none;
+  animation: none; }

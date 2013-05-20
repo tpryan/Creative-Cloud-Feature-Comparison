@@ -1,3 +1,5 @@
+@import 'mixins';
+
 $base-font: source-sans-pro, sans-serif;
 
 
@@ -45,7 +47,7 @@ tbody{
     padding: 1% 2% 1% 2%;
     width: 16%;
     background-color: #e7e7e7;
-
+    position: relative;
   }
 }
 
@@ -67,6 +69,8 @@ a{
 a[data-tip]:after {
   content: attr(data-tip);
   position: absolute;
+  left: 20px;
+  right: 10px;
   z-index: 1000;
   visibility: hidden;
   background: #FFF;
@@ -87,10 +91,14 @@ a[data-tip]:hover:before, a[data-tip]:hover:after {
 
 .app, .service{
   display: inline-block;
-  width: 15%;
+  width: 19%;
   min-width: 20px;
   -webkit-filter: drop-shadow(2px 2px 3px #666);
 
+}
+
+.edge, .other{
+  width: 13%;
 }
 
 .trial{
@@ -102,27 +110,11 @@ a[data-tip]:hover:before, a[data-tip]:hover:after {
 }
 
 
-@-webkit-keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  3.12% {
-    opacity: 1;
-  }
-  6.5% {
-    opacity: 1;
-  }
-  9.72%{
-  	opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
+
+
+
 
 .single-rotator{
-	// max-width: 300px;
-	// min-height: 300px;
 	width: 100%;
 	height: 100%;
 	position: relative;
@@ -138,6 +130,8 @@ a[data-tip]:hover:before, a[data-tip]:hover:after {
 	display: block;
 }
 
+
+
 .number{
   font-size: 1.5rem;
 }
@@ -150,13 +144,6 @@ a[data-tip]:hover:before, a[data-tip]:hover:after {
     @extend .number;
 }
 
-@mixin rotator($duration,$delay) {
-  -webkit-animation-name: appear;
-  -webkit-animation-duration: $duration;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-delay: $delay;
-}
 
 $items: 12;
 $interval: 5;
@@ -176,3 +163,10 @@ $duration: ($interval * $items);
 .single-rotator .premiere { @include rotator($duration + s, ($interval * 10) + s);	}
 .single-rotator .speedgrade { @include rotator($duration + s, ($interval * 11) + s);	}
 
+.single-rotator .noanimate{
+  -webkit-animation: none;
+  -moz-animation: none;
+  -o-animation: none;
+  -ms-animation: none;
+  animation: none;
+}
