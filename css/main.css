@@ -98,6 +98,12 @@ tbody td {
   width: 16%;
   background-color: #e7e7e7;
   position: relative; }
+  tbody td .modal-toggle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 5px;
+    font-size: 12px; }
 
 ul {
   padding-left: 0;
@@ -113,6 +119,7 @@ a[data-tip]:after {
   position: absolute;
   left: 20px;
   right: 10px;
+  top: -15px;
   z-index: 1000;
   visibility: hidden;
   background: #FFF;
@@ -430,3 +437,45 @@ a[data-tip]:hover:before, a[data-tip]:hover:after {
   -o-animation: none;
   -ms-animation: none;
   animation: none; }
+
+#modal {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  z-index: 40001; }
+  #modal #modal-box {
+    background-color: #FFFFFF;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    top: 20%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8); }
+    #modal #modal-box #modal-content h2 {
+      margin-top: 0; }
+    #modal #modal-box .close {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 10px 10px 0 0;
+      padding-top: 5px;
+      background-color: #000;
+      height: 25px;
+      width: 30px;
+      border: 4px solid #999999;
+      border-radius: 30px;
+      text-align: center;
+      box-shadow: inset 0 0 3px white, 1px 1px 3px rgba(0, 0, 0, 0.8); }
+    #modal #modal-box .close:hover {
+      box-shadow: inset 0 0 3px white, 1px 1px 3px rgba(255, 0, 0, 0.8); }
+    #modal #modal-box .close {
+      transition: all 0.2s linear;
+      -webkit-transition: all 0.2s linear;
+      /* Safari */ }
+
+.hidden {
+  display: none; }
