@@ -1,6 +1,3 @@
-/* global console: false */
-
-
 function toggleAllSingles(){
 	[].forEach.call( document.querySelectorAll('.single-rotator .app'), function(el) {
 		el.classList.toggle("single");
@@ -11,6 +8,10 @@ function toggleAllSingles(){
 function closeModal(e){
 	e.preventDefault();
 	document.querySelector('#modal').classList.add("hidden");
+}
+
+function preventCloseModal(e){
+	e.stopPropagation();
 }
 
 function toggleLink(e){
@@ -24,10 +25,8 @@ function launchModal(e){
 	if(typeof targetSelector === 'undefined'){
 		targetSelector = e.target.parentElement.hash;
 	}
-	console.log(targetSelector);
 
 	var targetContent = document.querySelector(targetSelector);
-	console.log(targetContent.innerHTML);
 	document.querySelector("#modal-content").innerHTML = targetContent.innerHTML;
 	document.querySelector('#modal').classList.remove("hidden");
 
@@ -44,6 +43,8 @@ document.addEventListener('DOMContentLoaded', function() {
 	});
 	document.querySelector("#list-sub-toggle").addEventListener("click", toggleLink);
 	document.querySelector("#modal-box .close").addEventListener("click", closeModal);
+	document.querySelector("#modal").addEventListener("click", closeModal);
+	document.querySelector("#modal-box").addEventListener("click", preventCloseModal);
 
 });
 

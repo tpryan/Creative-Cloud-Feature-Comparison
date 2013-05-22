@@ -123,7 +123,7 @@ a[data-tip]:after {
   padding: 2px 5px;
   box-shadow: 2px 2px 3px #CCC;
   margin-left: -5%;
-  
+
 }
 
 a[data-tip]:hover:before, a[data-tip]:hover:after {
@@ -234,6 +234,7 @@ $duration: ($interval * $items);
     position: relative;
     top: 20%;
     box-shadow: 3px 3px 5px rgba(0,0,0,.8);
+    border-radius: 5px;
     #modal-content{
       font-size: 120%;
       h2{
@@ -255,6 +256,7 @@ $duration: ($interval * $items);
       border-radius: 30px;
       text-align: center;
       box-shadow: inset 0 0 3px #FFFFFF, 1px 1px 3px rgba(0,0,0,.8);
+      font-weight: bold;
     }
     .close:hover{
       box-shadow: inset 0 0 3px #FFFFFF, 1px 1px 3px rgba(38,153,246,.8);
