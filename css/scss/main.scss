@@ -65,6 +65,31 @@ tbody{
   }
 }
 
+.product-table{
+  th{
+    width: 15%;
+    padding-right: 10px;
+    font-size: 100%;
+    vertical-align: middle;
+  }
+  .included, .available{
+    background-color: rgba(200,255,200,.8);
+  }
+  .trial, {
+    background-color: rgba(100,100,255,.8);
+  }
+  .limited{
+    background-color: rgba(200,200,255,.8);
+  }
+   .notavailable{
+    background-color: rgba(255,220,220,.8);
+  }
+  .mixed{
+    background-color: rgba(200,255,200,.8);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,220,220,.8) 35px, rgba(255,220,220,.8) 70px);
+  }
+}
+
 ul{
   padding-left: 0;
   list-style: none;
@@ -98,6 +123,7 @@ a[data-tip]:after {
   padding: 2px 5px;
   box-shadow: 2px 2px 3px #CCC;
   margin-left: -5%;
+  
 }
 
 a[data-tip]:hover:before, a[data-tip]:hover:after {

@@ -109,6 +109,23 @@ tbody td {
     padding: 0 5px;
     font-size: 12px; }
 
+.product-table th {
+  width: 15%;
+  padding-right: 10px;
+  font-size: 100%;
+  vertical-align: middle; }
+.product-table .included, .product-table .available {
+  background-color: rgba(200, 255, 200, 0.8); }
+.product-table .trial {
+  background-color: rgba(100, 100, 255, 0.8); }
+.product-table .limited {
+  background-color: rgba(200, 200, 255, 0.8); }
+.product-table .notavailable {
+  background-color: rgba(255, 220, 220, 0.8); }
+.product-table .mixed {
+  background-color: rgba(200, 255, 200, 0.8);
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255, 220, 220, 0.8) 35px, rgba(255, 220, 220, 0.8) 70px); }
+
 ul {
   padding-left: 0;
   list-style: none; }
