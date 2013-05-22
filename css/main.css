@@ -65,14 +65,15 @@
 body {
   font-family: source-sans-pro, sans-serif;
   background-color: #e7e7e7;
-  margin: 0; }
+  margin: 0;
+  font-weight: 300; }
 
 header {
   background-color: #212121;
   padding: 10px; }
   header h1 {
     color: #FFFFFF;
-    font-weight: 600;
+    font-weight: 700;
     margin: 0; }
 
 table {
@@ -81,6 +82,9 @@ table {
   border-collapse: separate;
   border-spacing: 1px 1px;
   width: 96%; }
+
+th {
+  font-weight: 600; }
 
 thead th {
   background-color: #ccc;
@@ -112,7 +116,11 @@ ul {
     margin-bottom: 20px; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #2699f6; }
+
+dt {
+  font-weight: bold; }
 
 a[data-tip]:after {
   content: attr(data-tip);
@@ -454,8 +462,10 @@ a[data-tip]:hover:before, a[data-tip]:hover:after {
     position: relative;
     top: 20%;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8); }
-    #modal #modal-box #modal-content h2 {
-      margin-top: 0; }
+    #modal #modal-box #modal-content {
+      font-size: 120%; }
+      #modal #modal-box #modal-content h2 {
+        margin-top: 0; }
     #modal #modal-box .close {
       display: block;
       position: absolute;
@@ -471,7 +481,7 @@ a[data-tip]:hover:before, a[data-tip]:hover:after {
       text-align: center;
       box-shadow: inset 0 0 3px white, 1px 1px 3px rgba(0, 0, 0, 0.8); }
     #modal #modal-box .close:hover {
-      box-shadow: inset 0 0 3px white, 1px 1px 3px rgba(255, 0, 0, 0.8); }
+      box-shadow: inset 0 0 3px white, 1px 1px 3px rgba(38, 153, 246, 0.8); }
     #modal #modal-box .close {
       transition: all 0.2s linear;
       -webkit-transition: all 0.2s linear;
