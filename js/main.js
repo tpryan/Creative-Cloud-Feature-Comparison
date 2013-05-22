@@ -21,7 +21,14 @@ function launchModal(e){
 	e.preventDefault();
 	console.log(e);
 	console.log(e.target.hash);
-	var targetContent = document.querySelector(e.target.hash);
+	var targetSelector = e.target.hash;
+	console.log(targetSelector);
+	if(typeof targetSelector === 'undefined'){
+		targetSelector = e.target.parentElement.hash;
+	}
+
+
+	var targetContent = document.querySelector(targetSelector);
 	console.log(targetContent);
 	document.querySelector("#modal-content").innerHTML = targetContent.innerHTML;
 	document.querySelector('#modal').classList.remove("hidden");

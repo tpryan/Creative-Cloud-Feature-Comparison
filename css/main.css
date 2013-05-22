@@ -98,7 +98,7 @@ tbody td {
   width: 16%;
   background-color: #e7e7e7;
   position: relative; }
-  tbody td .modal-toggle {
+  tbody td .details {
     position: absolute;
     bottom: 0;
     right: 0;
